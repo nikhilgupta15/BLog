@@ -1,0 +1,26 @@
+<div class="form-group">
+  <label for="title">Title</label>
+  <input
+    required
+    value="<%= article.title %>"
+    type="text"
+    id="title"
+    name="title"
+    class="form-control"
+  />
+</div>
+<div>
+  <label for="description">Description</label>
+  <textarea id="description" name="description" class="form-control">
+<%= article.description %></textarea
+  >
+</div>
+<div>
+  <label for="markdown">Markdown</label>
+  <textarea required id="markdown" name="markdown" class="form-control">
+<%= article.markdown %></textarea
+  >
+</div>
+
+<a href="/" class="btn btn-secondary mt-4">Cancel</a>
+<button type="submit" class="btn btn-primary mt-4">Save</button>
